@@ -1,7 +1,19 @@
 <h1>HELLO!</h1>
 
 <div id="users">
+<table>
+<tr>
+<th>
 Users
+</th>
+</tr>
+
+<% for user in @users_list %>
+ <tr>
+ <td><%= user.name %></td>
+ </tr>
+<% end %> 
+</table>
 </div>
 <div id="user-groups">
 Groups
