@@ -1,10 +1,12 @@
-<h1>HELLO!</h1>
+<h1>Dashboard</h1>
+
+<% if current_user and current_user.admin %>
 
 <div id="users">
 <table>
 <tr>
 <th>
-Users
+All users
 </th>
 </tr>
 
@@ -13,8 +15,12 @@ Users
  <td><%= user.name %> <%= user.email %></td>
  </tr>
 <% end %> 
+
 </table>
 </div>
+
+<% end %>
+
 <div id="user-groups">
 Groups
 </div>
